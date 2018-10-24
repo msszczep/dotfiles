@@ -18,7 +18,8 @@ git_color ()
   echo -ne $color
 }
 
-export PS1="[%F{214}20%D%F{255}|%F{214}%*%F{255}] %F{45}%d%F{255} $(git_color)$%F{255} "
+export PS1="[%F{214}20%D%F{255}|%F{214}%*%F{255}] %F{45}%~%F{255} 
+$(git_color)$%F{255} "
 
 # where
 # PS1=prompt value in shell
@@ -27,6 +28,6 @@ export PS1="[%F{214}20%D%F{255}|%F{214}%*%F{255}] %F{45}%d%F{255} $(git_color)$%
 # %F{255} is font white
 # %* is the time in HH:MM:SS 24-hour format
 # %F{45} is font sky-blue
-# %d is the current pwd
+# %~ is the current working relative to the home directory 
 
 eval "$(rbenv init -)"
