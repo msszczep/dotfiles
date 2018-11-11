@@ -31,3 +31,4 @@ $(git_color)$%F{255} "
 # %~ is the current working relative to the home directory 
 
 eval "$(rbenv init -)"
+export PATH="/usr/local/sbin:$PATH"
