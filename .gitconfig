@@ -1,0 +1,4 @@
+[user]
+	email = mitchell@szcz.org
+[alias]
+	logs = log --pretty=format:'%C(white)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)' --abbrev-commit
